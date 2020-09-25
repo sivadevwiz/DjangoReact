@@ -20,3 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('djangoPages.urls'))
 ]
+
+handler404 = 'djangoPages.views.handler404'
+handler500 = 'djangoPages.views.handler500'
